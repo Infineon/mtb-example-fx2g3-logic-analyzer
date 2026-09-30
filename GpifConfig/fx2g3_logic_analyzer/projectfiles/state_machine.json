@@ -1,0 +1,258 @@
+{
+    "actions": [
+        {
+            "alpha": 0,
+            "beta": 131072,
+            "group": 5,
+            "name": "LD_DATA_COUNT",
+            "type": 0,
+            "values": {
+                "counter_limit": "1",
+                "counter_load": "0",
+                "counter_mask": true,
+                "counter_step": "1",
+                "counter_type": "up_counter",
+                "reload_onreach": true
+            }
+        }
+    ],
+    "edges": [
+        {
+            "controlX": -690.9350443599494,
+            "controlY": -645.4014575411912,
+            "customCtrl": false,
+            "endID": 1,
+            "equation": "DATA_CNT_HIT",
+            "startID": 5
+        },
+        {
+            "controlX": -455.34980988593156,
+            "controlY": -740.0747782002534,
+            "customCtrl": false,
+            "endID": 1,
+            "equation": "!FW_TRIGGER",
+            "startID": 3
+        },
+        {
+            "controlX": -672.1745880861852,
+            "controlY": -854.4553231939162,
+            "customCtrl": false,
+            "endID": 2,
+            "equation": "DMA_RDY_TH0",
+            "startID": 1
+        },
+        {
+            "controlX": -472.02408111533595,
+            "controlY": -814.444866920152,
+            "customCtrl": false,
+            "endID": 3,
+            "equation": "FW_TRIGGER",
+            "startID": 2
+        },
+        {
+            "controlX": -439.01489226869455,
+            "controlY": -1049.7265525982255,
+            "customCtrl": false,
+            "endID": 1,
+            "equation": "LOGIC_ONE",
+            "startID": 0
+        },
+        {
+            "controlX": -710.7867553865652,
+            "controlY": -467.2170468948035,
+            "customCtrl": false,
+            "endID": 5,
+            "equation": "DMA_RDY_TH1",
+            "startID": 4
+        },
+        {
+            "controlX": -578.9176172370089,
+            "controlY": -684.0335868187581,
+            "customCtrl": false,
+            "endID": 3,
+            "equation": "FW_TRIGGER",
+            "startID": 4
+        },
+        {
+            "controlX": -337.8479087452472,
+            "controlY": -876.8529784537388,
+            "customCtrl": false,
+            "endID": 3,
+            "equation": "FW_TRIGGER",
+            "startID": 1
+        },
+        {
+            "controlX": -812.5941064638783,
+            "controlY": -623.2404942965778,
+            "customCtrl": false,
+            "endID": 4,
+            "equation": "DATA_CNT_HIT",
+            "startID": 2
+        },
+        {
+            "controlX": -426.5044359949304,
+            "controlY": -537.7084917617237,
+            "customCtrl": false,
+            "endID": 3,
+            "equation": "FW_TRIGGER",
+            "startID": 5
+        }
+    ],
+    "states": [
+        {
+            "actions": [
+                {
+                    "alpha": 0,
+                    "beta": 131072,
+                    "group": 5,
+                    "name": "LD_DATA_COUNT",
+                    "type": 0,
+                    "values": {
+                        "counter_limit": "1",
+                        "counter_load": "0",
+                        "counter_mask": true,
+                        "counter_step": "1",
+                        "counter_type": "up_counter",
+                        "reload_onreach": true
+                    }
+                }
+            ],
+            "id": 3,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "STOP",
+            "type": 1,
+            "x": -267.4562737642585,
+            "y": -691.1863117870722
+        },
+        {
+            "actions": [
+                {
+                    "alpha": 0,
+                    "beta": 131072,
+                    "group": 5,
+                    "name": "LD_DATA_COUNT",
+                    "type": 0,
+                    "values": {
+                        "counter_limit": "1",
+                        "counter_load": "0",
+                        "counter_mask": true,
+                        "counter_step": "1",
+                        "counter_type": "up_counter",
+                        "reload_onreach": true
+                    }
+                }
+            ],
+            "id": 4,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "IDLE1",
+            "type": 1,
+            "x": -995,
+            "y": -553
+        },
+        {
+            "actions": [
+            ],
+            "id": 0,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "START",
+            "type": 0,
+            "x": -422,
+            "y": -1260
+        },
+        {
+            "actions": [
+                {
+                    "alpha": 4,
+                    "beta": 128,
+                    "group": 2,
+                    "name": "IN_DATA",
+                    "type": 1,
+                    "values": {
+                        "data_sink": "Socket",
+                        "sample_data": true,
+                        "thread_num": "Thread1",
+                        "write_data": true
+                    }
+                },
+                {
+                    "alpha": 0,
+                    "beta": 65536,
+                    "group": 0,
+                    "name": "COUNT_DATA",
+                    "type": 1,
+                    "values": {
+                    }
+                }
+            ],
+            "id": 5,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "READ1",
+            "type": 1,
+            "x": -632.8612167300381,
+            "y": -381.06273764258555
+        },
+        {
+            "actions": [
+                {
+                    "alpha": 0,
+                    "beta": 131072,
+                    "group": 5,
+                    "name": "LD_DATA_COUNT",
+                    "type": 0,
+                    "values": {
+                        "counter_limit": "1",
+                        "counter_load": "0",
+                        "counter_mask": true,
+                        "counter_step": "1",
+                        "counter_type": "up_counter",
+                        "reload_onreach": true
+                    }
+                }
+            ],
+            "id": 1,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "IDLE0",
+            "type": 1,
+            "x": -676.7661596958175,
+            "y": -1044.7167300380227
+        },
+        {
+            "actions": [
+                {
+                    "alpha": 4,
+                    "beta": 128,
+                    "group": 2,
+                    "name": "IN_DATA",
+                    "type": 1,
+                    "values": {
+                        "data_sink": "Socket",
+                        "sample_data": true,
+                        "thread_num": "Thread0",
+                        "write_data": true
+                    }
+                },
+                {
+                    "alpha": 0,
+                    "beta": 65536,
+                    "group": 0,
+                    "name": "COUNT_DATA",
+                    "type": 1,
+                    "values": {
+                    }
+                }
+            ],
+            "id": 2,
+            "repeatCount": 0,
+            "repeatUntilNextTransistion": true,
+            "title": "READ0",
+            "type": 1,
+            "x": -880.8384030418251,
+            "y": -851.8764258555132
+        }
+    ]
+}
